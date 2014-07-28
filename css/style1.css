@@ -1,0 +1,732 @@
+@font-face {
+  font-family: 'handgley';
+  src: url('../fonts/Handgley Regular.otf');
+}
+
+body {
+    background-image: url(../images/bg.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    background-color: #211c2f;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+.modal-open {
+overflow: auto;
+}
+
+h1 {
+  color:#fff;
+    padding-top:20px;
+    font-weight:300;
+  font-size:18pt;
+}
+
+button.a:link {
+  color:#fff;
+  text-decoration: none;
+}
+button.a:visited {
+  color:#fff;
+  text-decoration: none;
+}
+button.a:hover {
+  color:#fff;
+  text-decoration: none;
+}
+button.a:active {
+  color:#fff;
+  text-decoration: none;
+}
+
+
+@media all and (min-width: 992px) {
+
+  .modal-content {
+    min-height:580px;
+
+  }
+}
+
+.tickets-button {
+  width:220px;
+  height:50px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media all and (min-width: 992px) {
+
+  .tickets-button  {
+    margin-top:470px;
+
+  }
+}
+
+.ticket-content {
+  width:100%;
+}
+
+
+html, body, #map-canvas  {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#map-canvas {
+    margin-left: auto;
+    margin-right: auto;
+  width:500px;
+  height:480px;
+}
+
+@media all and (min-width: 510px) and (max-width: 629px) {
+  #map-canvas {
+    width:400px;
+    height:380px;
+  }
+}
+
+@media all and (min-width: 300px) and (max-width: 509px) {
+  #map-canvas {
+    width:300px;
+    height:280px;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1150px) {
+  #map-canvas {
+    width:410px;
+    height:290px;
+  }
+  .tickets-button  {
+    margin-top:70px;
+  }
+  .modal-content {
+    min-height:370px;
+  }
+}
+
+@media all and (min-width: 1151px) and (max-width: 1330px) {
+  #map-canvas {
+    width:480px;
+    height:460px;
+  }
+  .tickets-button  {
+    margin-top:230px;
+  }
+  .modal-content {
+    min-height:580px;
+  }
+}
+
+@media all and (min-width: 1200px) and (max-width: 1330px) {
+  .tickets-button  {
+    margin-top:470px;
+  }
+}
+
+@media all and (min-width: 1060px) {
+  #map-canvas {
+    margin-left: 10px;
+    margin-right: 10px;
+    float: right;
+  }
+
+  .movie-times {
+    float: left;
+  }
+}
+   
+
+#main {
+    width: 100%;
+    height:100vh;
+    z-index:5;
+}
+
+
+
+        
+.date {
+    height:56px;
+    margin-top: 40px;
+}
+           
+.date-img {
+    height:56px;
+    width:auto;
+    min-width: 100px;
+    max-width: 295px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(../images/arriving.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+        
+.title {
+    height:86px;
+}
+ 
+.title-img {
+    min-width: 205px;
+    max-width:650px;
+    width:auto;
+    height:86px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(../images/title.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+}            
+        
+.nav {
+    position:absolute;
+    width:100%;
+    padding:0px;
+}
+        
+@media all and (max-height: 369px) {
+  .nav {
+      margin-top:65vh;
+  }
+  .title {
+      margin-top:0px;
+       height:45px;
+  } 
+   .button-container {
+        margin-top:10px;
+    }
+}
+        
+@media all and (max-height: 399px) and (min-height: 370px) {
+  .nav {
+      margin-top:65vh;
+  }
+  .title {
+      margin-top:10px;
+       height:45px;
+  } 
+     .button-container {
+        margin-top:10px;
+  }
+}
+        
+@media all and (max-height: 499px) and (min-height: 400px) {
+  .nav {
+      margin-top:65vh;
+  }
+    .title {
+      margin-top:30px;
+        height:45px;
+  }
+     .button-container {
+        margin-top:5px;
+    }
+}
+
+@media all and (max-height:  589px) and (min-height: 500px) {
+  .nav {
+      margin-top:70vh;
+  }
+    .title {
+      margin-top:70px;
+  }
+    .button-container {
+        margin-top:10px;
+    }
+}
+
+@media all and (max-height: 650px) and (min-height: 590px) {
+  .nav {
+      margin-top:70vh;
+  }
+    .title {
+      margin-top:90px;
+  }
+     .button-container {
+        margin-top:20px;
+    }
+}
+
+@media all and (max-height: 750px) and (min-height: 651px) {
+  .nav {
+      margin-top:75vh;
+  }
+  .title {
+      margin-top:130px;
+  }
+    
+   .button-container {
+        margin-top:30px;
+    }  
+}
+        
+@media all and (max-height: 790px) and (min-height: 751px) {
+  .nav {
+      margin-top:79vh;
+  }
+  .title {
+      margin-top:180px;
+  }
+     .button-container {
+        margin-top:60px;
+    }
+}
+
+
+@media all and (min-height: 791px) {
+  .nav {
+      margin-top:79vh;
+  }
+    
+   .title {
+      margin-top:200px;
+  }
+    
+     .button-container {
+        margin-top:60px;
+    }
+}
+               
+
+.trailer-container {
+    height:135px;
+    width:166px;
+    float:left;
+    margin-left:10px;
+}
+
+.trailer {
+    height:115px;
+    width:166px;
+    background-image: url(../images/trailer.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+.info-container {
+    height:135px;
+    width:166px;
+    float:right;
+    margin-right:10px;
+}
+        
+.info {
+    height:115px;
+    width:166px;
+    background-image: url(../images/book.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+        
+@media all and (min-width: 880px) {
+  .trailer-container {
+      margin-left:25px;
+  }
+   .info-container {
+      margin-right:25px;
+   }
+}
+        
+@media all and (min-width: 1350px) {
+  .trailer-container {
+      margin-left:40px;
+  }
+   .info-container {
+      margin-right:40px;
+   }
+}
+
+.caption1 {
+    width:166px;
+    color:#fff;
+    margin-top:10px;
+    text-align: center;
+    float:left;
+    font-family: 'handgley';
+    font-size:12pt;
+}
+    
+.caption2 {
+    width:166px;
+    color:#fff;
+    text-align: center;
+    float:right;
+    margin-top:10px;
+    font-family: 'handgley';
+    font-size:12pt;
+}
+
+.ticket-content {
+    z-index:999;
+    width:100%;
+}
+             
+.button {
+    width:243px;
+    height:69px;
+    background-image: url(../images/button.png);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media all and (max-width: 399px) {
+ .button {
+    width:200px;
+    height:57px;
+    background-size: 100%;
+  }
+
+  h1 {
+    font-size:15pt;
+    padding-top:15px;
+  }
+}
+
+#cover{ 
+    position:fixed; 
+    top:0; left:0; 
+    background:rgba(0,0,0,0.6); 
+    z-index:5; 
+    width:100%; 
+    height:100%; 
+    display:none; 
+} 
+
+ #ticketsScreen { 
+     height:90%; 
+     width:90%; 
+     margin:0 auto; 
+     margin-top:10px; 
+     position:relative;
+     z-index:995; 
+     display:none;
+     background-color: #fff;
+ } 
+        
+#ticketsScreen:target, #ticketsScreen:target + #cover{
+        display:block; opacity:2; 
+} 
+
+.cancel {
+    display:block;
+    position:absolute;
+    top:3px; right:2px;
+    background:rgb(245,245,245);
+    color:black;
+    height:30px;
+    width:35px;
+    font-size:30px;
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+} 
+
+
+.modal-dialog {
+    width:90vw;
+    height: auto;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    box-shadow: none;
+    border:none;
+}
+
+.video-wrapper {
+    width:80%;
+    height:80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    display:inherit;
+}
+
+.close-button {
+    background-color: #fdd030;
+    width: 220px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+    margin-bottom: 10px;
+    border:none;
+    position: relative;
+    text-align:center;
+}
+.table {
+    max-width:400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.space {
+    height:100px;
+}
+
+/* Carousel */
+
+.carousel {
+    float:left;
+    margin-left: auto;
+    margin-right: auto;
+}
+       
+.carousel-control {
+    margin-top:30%;
+    position:relative;
+    z-index:999;
+ }
+        
+.carousel-control .left {
+        background-image: none;
+        height:25px;
+        opacity: 1;
+}
+        
+.carousel-control .right {
+        background-image: none;
+        margin-right: 0px;
+        height:25px;
+        opacity: 1;
+}
+   
+.navl {
+        width: 10vw;
+        min-width:20px;
+        max-width:45px;
+        height:30vh;
+        max-height:40px;
+        float:right;
+        margin-right:-40px;
+}
+        
+.navr {
+        width: 10vw;
+        min-width:20px;
+        max-width:45px;
+        height:30vh;
+        max-height:40px;
+        float:left;
+        margin-left:-40px;
+}
+
+@media all and (max-width: 390px) {
+     .navl {
+background-color: yellow;
+        height: 150px;
+        width:100%;
+        margin-right:-10px;
+    }
+
+    .navr {
+      background-color: yellow;
+      height: 150px;
+        width:100%;
+      margin-left: 0px;
+    }
+
+    .carousel-control .left {
+        height:150px;
+        opacity: 1;
+}
+        
+.carousel-control .right {
+        margin-right: 0px;
+        height:150px;
+        opacity: 1;
+}
+
+  }
+        
+@media all and (max-width: 499px) and (min-width: 100px) {
+     .navl {
+        margin-top:10vh;
+    }
+        
+    .navr {
+        margin-top:10vh;
+    }
+}   
+    
+    @media all and (max-width: 739px) and (min-width: 500px) {
+     .navl {
+        margin-top:15vh;
+    }
+        .navr {
+        margin-top:15vh;
+    }
+}
+
+
+@media all and (min-width: 740px) {
+  .navl {
+        margin-top:25vh;
+    }
+    .navr {
+        margin-top:25vh;
+    }
+}
+   
+/* about section */
+
+h2 {
+    font-family: 'handgley';
+    padding-top:15px;
+}
+
+.about {
+    margin-top:70px;
+    margin-bottom: 20px;
+    height:auto;
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+
+.book {
+    margin-top:25px;
+    height:100%;
+    max-height:350px;
+    margin-left:auto;
+    margin-right: auto;
+    max-width:327px;
+}
+
+.book-info {
+    margin-top:15px;
+}
+
+@media all and (min-width: 1200px) {
+  .book-info {
+    max-width:475px;
+  }
+}
+
+
+
+@media all and (max-width: 640px) {
+
+  #main {
+    height:570px;
+  }
+
+  .title-img {
+   width: 200px;
+    height:86px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(../images/title.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+  }  
+
+    .nav {
+      margin-top:400px;
+  }
+
+}
+
+
+
+@media all and (max-width: 399px) {
+  .
+.trailer-container {
+    height:85px;
+    width:110px;
+}
+
+.trailer {
+    height:85px;
+    width:110px;
+}
+
+.info-container {
+    height:85px;
+    width:110px;
+}
+        
+.info {
+    height:85px;
+    width:110px;
+}
+
+.caption1 {
+    width:100px;
+    font-size:10pt;
+}
+
+.caption2 {
+    width:120px;
+    font-size:10pt;
+}
+
+#main {
+  height:500px;
+}
+}
+
+
+@media all and (max-width: 399px) and (max-height: 500px) {
+  .nav {
+      margin-top:300px;
+  }
+
+}
+
+@media all and (max-width: 300px) and (max-height: 500px) {
+
+.nav {
+  margin-top:270px;
+}
+}
+
+@media all and (min-width:992px) {
+
+  #smallercnav {
+    display:none;
+  }
+
+}
